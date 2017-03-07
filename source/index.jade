@@ -1,0 +1,195 @@
+doctype html
+//if lt IE 7
+  html.no-js.ie6.oldie(lang='en')
+//if IE 7
+  html.no-js.ie7.oldie(lang='en')
+//if IE 8
+  html.no-js.ie8.oldie(lang='en')
+// [if gt IE 8] <!
+html.no-js(lang='en-US')
+    // <![endif]
+    head
+        // DEFAULT META TAGS
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        title Youyin
+        // DEFAULT META TAGS
+        // FONTS
+        link(href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,900', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Didact+Gothic:400', rel='stylesheet', type='text/css')
+        // FONTS
+        // CSS
+        // <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+        link#default-style-css(rel='stylesheet', href='files/css/style.css', type='text/css', media='all')
+        link#wolf-css(rel='stylesheet', href='files/css/wolf.css', type='text/css', media='all')
+        link#owlcarousel-css(rel='stylesheet', href='files/css/owl.carousel.css', type='text/css', media='all')
+        link#fontawesome-style-css(rel='stylesheet', href='files/css/font-awesome.min.css', type='text/css', media='all')
+        link#ionic-icons-style-css(rel='stylesheet', href='files/css/ionicons.css', type='text/css', media='all')
+        link#mqueries-style-css(rel='stylesheet', href='files/css/mqueries.css', type='text/css', media='all')
+        // CSS
+        style(type='text/css').
+            #mc_embed_signup{background:transparent; clear:left; font:14px; }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+        // FAVICON
+        link(rel='shortcut icon', href='files/uploads/favicon.png')
+        // FAVICON
+    body
+        #fb-root
+        script.
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        // PAGELOADER
+        #page-loader
+            .page-loader-inner
+                .loader
+                    strong Loading
+        // PAGELOADER
+        // PAGE CONTENT
+        #page-content
+            // HEADER
+            header#header
+                .header-inner.clearfix
+                    #logo.left-float.show-light-logo
+                        a#dark-logo.logotype(href='index.html')
+                            img(src='files/uploads/logo-small.png', srcset='files/uploads/logo-small.png 1x, files/uploads/logo-small.png 2x', alt='Logo')
+                        a#light-logo.logotype(href='index.html')
+                            img(src='files/uploads/logo-small.png', srcset='files/uploads/logo-small.png 1x, files/uploads/logo-small.png 2x', alt='Logo')
+                    #menu.right-float.clearfix.menu-light
+                        a.open-nav(href='#')
+                            span.hamburger
+                            span.text Menu
+                        nav#main-nav
+                            ul
+                                li.current-menu-item
+                                    a(href='index.html') Home
+                                li
+                                    a(href='classes.jade') Classes
+                                li
+                                    a(href='about.jade') About
+                                li
+                                    a(href='contact.jade') Contact
+                        // END .header-inner
+            // HEADER
+            .test(style='position: fixed;top:20px;left:20px; height: 60px; overflow:hidden; width: 100%; color: red;')
+            // HERO
+            section#hero.hero-full.parallax-section(data-parallax-image='files/uploads/a1.jpg')
+                .page-title
+                    a#dark-logo.logotype(href='index.html')
+                        img(src='files/uploads/logo.png', srcset='files/uploads/logo.png 1x, files/uploads/logo.png 2x', alt='Logo')
+                    .spacer.spacer-mini
+                .page-title.vbottom
+                    .spacer.spacer-mini
+                    a.facebook-title(href='https://www.facebook.com/youyinyoga', target='_blank')
+                        | Like us on Facebook
+                        img.facebook-button(src='files/uploads/icon-facebook.png')
+                    p
+                        a.mini-button.sr-button.sr-button5(href='classes.jade') Find A Class
+                a#scroll-down(href='#')
+            // HERO
+            // PAGEBODY
+            section#page-body.page-small-margin
+                .text-light(style='background-color: #b8cec5;')
+                    .spacer.spacer-regular
+                    .wrapper-small.align-center
+                        h4
+                            strong YOUYIN
+                        .spacer.spacer-mini
+                        h5.alttitle
+                            | You Yin is a small yoga school located in the south-west of Amsterdam, close to the Vondelpark. We provide yin yoga and meditation classes in a cosy atmosphere with small groups of people. Our goal is to create and ambience for everyone to develop themselves and just become a little bit more happy. You are welcome to join us.
+                    .spacer.spacer-regular
+                // END .horizontal-section
+                .horizontal-section.parallax-section.text-light(data-parallax-image='files/uploads/b1.jpg')
+                    .horizontal-inner.wrapper
+                        blockquote.align-center
+                            | “We don’t use our body to get into a pose,
+                            br
+                            | we use the pose to get into our body”
+                // END .horizontal-section
+                .horizontal-section
+                    .horizontal-inner.wrapper
+                        .column-section.clearfix
+                            .column.one-half.align-center
+                                i.ion.ion-ios-calendar-outline.ion-4x.colored
+                                h5 Schedule
+                                p
+                                    | You Yin has a weekly Yin Yoga class on Tuesdays at 20:00 and special events monthly. Check the schedule for the next weeks.
+                                .spacer.spacer-small
+                                .pricing-action
+                                    p
+                                        a.mini-button.sr-button.sr-button3(href='classes.jade') View Schedule
+                            .column.one-half.last-col.align-center
+                                i.ion.ion-ios-pricetag-outline.ion-4x.colored
+                                h5 Prices
+                                p
+                                    | You Yin wants to make it possible for everyone to join yoga classes. Special people deserve special offers.
+                                .spacer.spacer-small
+                                .pricing-action
+                                    p
+                                        a.mini-button.sr-button.sr-button3(href='classes.jade') View Offers
+                    // END .horizontal-section
+                    .horizontal-section.parallax-section.text-light(data-parallax-image='files/uploads/c1.jpg')
+                        .horizontal-inner.wrapper.wrapper-small
+                            h4
+                                strong Newsletter
+                            .spacer.spacer-mini
+                            h5.alttitle Stay up to date on the class schedule, workshops and events.
+                            .spacer.spacer-small
+                            #mc_embed_signup
+                                form#mc-embedded-subscribe-form.validate(action='//youyin.us13.list-manage.com/subscribe/post?u=c65bd8f915223b6ed261c34b4&id=d2a9ebe964', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
+                                    #mc_embed_signup_scroll
+                                        // <label for="mce-EMAIL">Subscribe to our mailing list</label>
+                                        input#mce-EMAIL.email(style='max-width: 260px;', type='email', value='', name='EMAIL', placeholder='email address', required='')
+                                        // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                                        div(style='position: absolute; left: -5000px;', aria-hidden='true')
+                                            input(type='text', name='b_c65bd8f915223b6ed261c34b4_d2a9ebe964', tabindex='-1', value='')
+                                        .spacer.spacer-mini
+                                        .clear
+                                            input#mc-embedded-subscribe.button.sr-button.sr-button4.small-button.button-1.rounded(type='submit', value='Subscribe', name='subscribe')
+                            // End mc_embed_signup
+                    // END .horizontal-section
+            // PAGEBODY
+            // FOOTER
+            footer
+                .footer-inner.wrapper
+                    .column-section.clearfix
+                        .column.one-half
+                            .widget
+                                ul.socialmedia-widget
+                                    li.facebook
+                                        a(href='https://www.facebook.com/youyinyoga')
+                                    li.widget.copyright
+                                        p
+                                            | Phone:
+                                            a.footercontact(href='tel:+31622399967') 06 22 39 99 67
+                                            |                             &nbsp / &nbsp
+                                            |                             Mail:
+                                            a.footercontact(href='mailto:info@youyin.nl') info@youyin.nl
+                        .column.one-half.last-col.align-right
+                            .widget.copyright
+                                p
+                                    | Design:
+                                    a(href='') T. Janmaat
+                                    | &nbsp / &nbsp Development:
+                                    a(href='') M. Vos
+                        a#backtotop(href='#') Back To Top
+        // END #page-content
+        // PAGE CONTENT
+        // SCRIPTS
+        script(src='files/js/jquery-2.1.4.min.js')
+        script(type='text/javascript', src='files/js/jquery.pace.js')
+        script(type='text/javascript', src='files/js/jquery.easing.1.3.js')
+        script(type='text/javascript', src='files/js/jquery.easing.compatibility.js')
+        script(type='text/javascript', src='files/js/jquery.visible.min.js')
+        script(type='text/javascript', src='files/js/tweenMax.js')
+        script(type='text/javascript', src='files/js/jquery.bgvideo.min.js')
+        script(type='text/javascript', src='files/js/jquery.backgroundparallax.min.js')
+        script(type='text/javascript', src='files/js/jquery.wolf.min.js')
+        script(type='text/javascript', src='files/js/script.js')
+        // SCRIPTS

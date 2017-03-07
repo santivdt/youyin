@@ -1,0 +1,271 @@
+doctype html
+//if lt IE 7
+  html.no-js.ie6.oldie(lang='en')
+//if IE 7
+  html.no-js.ie7.oldie(lang='en')
+//if IE 8
+  html.no-js.ie8.oldie(lang='en')
+// [if gt IE 8] <!
+html.no-js(lang='en-US')
+    // <![endif]
+    head
+        // DEFAULT META TAGS
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        title Blog Single 1 | Avoc | Awesome Parallax Template
+        // DEFAULT META TAGS
+        // FONTS
+        link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700,900', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700', rel='stylesheet', type='text/css')
+        // FONTS
+        // CSS
+        link#default-style-css(rel='stylesheet', href='files/css/style.css', type='text/css', media='all')
+        link#fontawesome-style-css(rel='stylesheet', href='files/css/font-awesome.min.css', type='text/css', media='all')
+        link#ionic-icons-style-css(rel='stylesheet', href='files/css/ionicons.css', type='text/css', media='all')
+        link#mqueries-style-css(rel='stylesheet', href='files/css/mqueries.css', type='text/css', media='all')
+        // CSS
+        // FAVICON
+        link(rel='shortcut icon', href='files/uploads/favicon.png')
+        // FAVICON
+    body
+        // PAGELOADER
+        #page-loader
+            .page-loader-inner
+                .loader
+                    strong Loading
+        // PAGELOADER
+        // PAGE CONTENT
+        #page-content
+            // HEADER
+            header#header
+                .header-inner.clearfix
+                    #logo.left-float.show-light-logo
+                        a#dark-logo.logotype(href='index.html')
+                            img(src='files/uploads/logo-avoc-dark.png', srcset='files/uploads/logo-avoc-dark.png 1x, files/uploads/logo-avoc-dark@2x.png 2x', alt='Logo')
+                        a#light-logo.logotype(href='index.html')
+                            img(src='files/uploads/logo-avoc-light.png', srcset='files/uploads/logo-avoc-light.png 1x, files/uploads/logo-avoc-light@2x.png 2x', alt='Logo')
+                    #menu.right-float.clearfix.menu-light
+                        a.open-nav(href='#')
+                            span.hamburger
+                            span.text Menu
+                        nav#main-nav
+                            ul
+                                li
+                                    a(href='index.html') Home
+                                    ul.submenu
+                                        li
+                                            a(href='index.html')
+                                                | Portfolio
+                                                em Main
+                                        li
+                                            a(href='index-creative.html')
+                                                | Portfolio
+                                                em Creative
+                                        li
+                                            a(href='index-photography.html') Photography
+                                        li
+                                            a(href='index-masonry.html') Classic Masonry
+                                        li
+                                            a(href='index-agency.html') Agency
+                                li
+                                    a(href='about.jade') Pages
+                                    ul.submenu
+                                        li
+                                            a(href='about.jade')
+                                                | About
+                                                em classic
+                                        li
+                                            a(href='about-creative.jade')
+                                                | About
+                                                em creative
+                                        li
+                                            a(href='about-minimal.jade')
+                                                | About
+                                                em bold minimal
+                                        li
+                                            a(href='services.html') Services
+                                        li
+                                            a(href='404.jade') 404 Page
+                                li
+                                    a(href='blog.jade') Blog
+                                li
+                                    a(href='header-features.html') Features
+                                    ul.submenu
+                                        li
+                                            a(href='general-elements.html') General Elements
+                                        li
+                                            a(href='header-footer-options.html') Header / Footer
+                                        li
+                                            a(href='hero-options.html') Hero Options
+                                li
+                                    a(href='contact.html') Contact
+                        a.open-share(href='#') Share
+                    #header-share
+                        .share-inner.align-center
+                            a.close-share(href='') Close
+                            h5.title-share
+                                strong Share
+                            ul.share.socialmedia-widget
+                                li.facebook
+                                    a(href='#')
+                                li.twitter
+                                    a(href='#')
+                                li.googleplus
+                                    a(href='#')
+                                li.pinterest
+                                    a(href='#')
+                // END .header-inner
+            // HEADER
+            // HERO
+            section#hero.hero-big.parallax-section(data-parallax-image='files/uploads/1680x1100.jpg')
+                .page-title.hleft.vbottom
+                    h6.alttitle.text-light June 22, 2015
+                    h3.text-light
+                        strong Living Across the Country
+            // HERO
+            // PAGEBODY
+            section#page-body
+                #blog-single
+                    .blog-content.wrapper
+                        .blog-meta
+                            figure.meta-avatar
+                                a(href='#')
+                                    img(src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=100', alt='SEO NAME')
+                            .meta-author
+                                span written by
+                                a(href='') Spab Rice
+                            .meta-category
+                                span in category
+                                a(href='#') Travel
+                                a(href='#') Video
+                        .blog-text
+                            h2.alttitle.colored Moments from a Life Spent Living Across the Country
+                            p
+                                | Praesent augue arcu, ornare ut tincidunt eu, mattis a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In elit purus, ullamcorper vel luctus vitae, venenatis eu odio. Vivamus tincidunt, urna quis consectetur venenatis, quam urna tincidunt mi, quis convallis enim dolor sed elit.Praesent augue arcu, ornare ut tincidunt eu, mattis a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In elit purus, ullamcorper vel luctus vitae, venenatis eu odio. Vivamus tincidunt, urna quis consectetur venenatis, quam urna tincidunt mi, quis convallis enim dolor sed elit.
+                            blockquote
+                                p
+                                    | Nulla facilisi. Vestibulum pretium, dui eu aliquam faucibus, est dui hendrerit nulla, mattis semper turpis mauris eget tellus.
+                            p
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non enim ut enim fringilla adipiscing id in lorem. Quisque aliquet neque vitae lectus tempus consectetur. Aliquam erat volutpat. Nunc eu nibh nulla, id cursus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam at velit nisl. Aenean vitae est nisl. Cras molestie molestie nisl vel imperdiet. Donec vel mi sem. Etiam in nulla arcu, ut vehicula velit. Vivamus dapibus rutrum mi ut aliquam. In hac habitasse platea dictumst. Integer sagittis neque a tortor tempor in porta sem vulputate. Donec varius felis fermentum nisl imperdiet at molestie purus porta.
+                            p
+                                | Praesent augue arcu, ornare ut tincidunt eu, mattis a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In elit purus, ullamcorper vel luctus vitae, venenatis eu odio. Vivamus tincidunt, urna quis consectetur venenatis, quam urna tincidunt mi, quis convallis enim dolor sed elit.Praesent augue arcu, ornare ut tincidunt eu, mattis a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In elit purus, ullamcorper vel luctus vitae, venenatis eu odio. Vivamus tincidunt, urna quis consectetur.
+                        // END .blog-text
+                    // END .blog-content
+                    // Single Pagination
+                    .wrapper
+                        ul.single-pagination
+                            li.prev
+                                a(href='blog-single-2.html')
+                                    span Previous Post
+                            li.backtoworks
+                                a(href='blog.jade') Back To Posts
+                            li.next
+                                a(href='blog-single-2.html')
+                                    span Next Post
+                    // Single Pagination
+                    // COMMENTS
+                    #blog-comments
+                        .wrapper
+                            h4
+                                strong 3 Comments
+                            .separator-small
+                                span
+                            ul.comment-list
+                                li.comment
+                                    .comment-inner
+                                        .user
+                                            img.avatar(src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=50', height='50', width='50', alt='avatar')
+                                        .comment-content
+                                            h5.comment-name
+                                                strong Thom Y.
+                                            h6.time.alttitle Jan 26, 2014
+                                            p.comment-text
+                                                | Morbi ut urna at est posuere porta ac eu leo. Vivamus mollis sollicitudin varius. Pellentesque viverra, ligula id tincidunt ultrices, nunc nulla porttitor justo, sed varius risus urna et augue. Etiam et lectus lectus. Quisque vitae erat lorem, a mattis lectus.
+                                    ul.children
+                                        li.comment
+                                            .comment-inner
+                                                .user
+                                                    img.avatar(src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=50', height='50', width='50', alt='avatar')
+                                                .comment-content
+                                                    h5.comment-name
+                                                        strong Massive A.
+                                                    h6.time.alttitle Jan 26, 2014
+                                                    p.comment-text
+                                                        | Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                li.comment
+                                    .comment-inner
+                                        .user
+                                            img.avatar(src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=50', height='50', width='50', alt='avatar')
+                                        .comment-content
+                                            h5.comment-name
+                                                strong Kurt C.
+                                            h6.time.alttitle Jan 26, 2014
+                                            p.comment-text
+                                                | Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        // END .wrapper
+                    // END #blog-comments
+                    // COMMENTS
+                    // LEAVE COMMENT
+                    #blog-leavecomment.clearfix
+                        .wrapper
+                            h4
+                                strong Leave a comment
+                            form#commentform(action='#', method='post')
+                                .form-row.clearfix
+                                    label.req(for='author') Name *
+                                    input#author.author(type='text', name='author', value='', placeholder='Name *')
+                                .form-row.clearfix
+                                    label.req(for='email') Email *
+                                    input#email.email(type='text', name='email', value='', placeholder='Email *')
+                                .form-row.clearfix.last-formrow
+                                    label(for='website') Website
+                                    input#website.website(type='text', name='website', value='', placeholder='Website')
+                                .clear
+                                .form-row.clearfix.textbox
+                                    label.req(for='comment_form') Comment *
+                                    textarea#comment_form.comment_form(name='comment_form', rows='15', cols='50', placeholder='Comment *')
+                                .form-row.form-submit
+                                    input.submit(type='submit', name='submit_form', value='Post Comment')
+                        // END .wrapper
+                    // END #blog-leavecomment
+                    // LEAVE COMMENT
+                // END #blog-single
+            // PAGEBODY
+            // FOOTER
+            footer
+                .footer-inner.align-center.wrapper
+                    .widget
+                        ul.socialmedia-widget
+                            li.facebook
+                                a(href='#')
+                            li.twitter
+                                a(href='#')
+                            li.dribbble
+                                a(href='#')
+                            li.behance
+                                a(href='#')
+                            li.instagram
+                                a(href='#')
+                    .widget.copyright
+                        p
+                            | Copyright © 2014 by Avoc
+                            br
+                            |                 Made with Love by
+                            a(href='http://www.spab-rice.com') Spab Rice
+                    a#backtotop(href='#') Back To Top
+            // FOOTER
+        // END #page-content
+        // PAGE CONTENT
+        // SCRIPTS
+        script(src='files/js/jquery-2.1.4.min.js')
+        script(type='text/javascript', src='files/js/jquery.pace.js')
+        script(type='text/javascript', src='files/js/jquery.easing.1.3.js')
+        script(type='text/javascript', src='files/js/jquery.easing.compatibility.js')
+        script(type='text/javascript', src='files/js/jquery.visible.min.js')
+        script(type='text/javascript', src='files/js/tweenMax.js')
+        script(type='text/javascript', src='files/js/jquery.backgroundparallax.min.js')
+        script(type='text/javascript', src='files/js/script.js')
+        // SCRIPTS

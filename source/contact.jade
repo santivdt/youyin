@@ -1,0 +1,221 @@
+doctype html
+//if lt IE 7
+  html.no-js.ie6.oldie(lang='en')
+//if IE 7
+  html.no-js.ie7.oldie(lang='en')
+//if IE 8
+  html.no-js.ie8.oldie(lang='en')
+// [if gt IE 8] <!
+html.no-js(lang='en-US')
+    // <![endif]
+    head
+        // DEFAULT META TAGS
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        title Youyin
+        // DEFAULT META TAGS
+        // FONTS
+        link(href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,900', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Didact+Gothic:400', rel='stylesheet', type='text/css')
+        // FONTS
+        // CSS
+        link#default-style-css(rel='stylesheet', href='files/css/style.css', type='text/css', media='all')
+        link#wolf-css(rel='stylesheet', href='files/css/wolf.css', type='text/css', media='all')
+        link#owlcarousel-css(rel='stylesheet', href='files/css/owl.carousel.css', type='text/css', media='all')
+        link#fontawesome-style-css(rel='stylesheet', href='files/css/font-awesome.min.css', type='text/css', media='all')
+        link#ionic-icons-style-css(rel='stylesheet', href='files/css/ionicons.css', type='text/css', media='all')
+        link#mqueries-style-css(rel='stylesheet', href='files/css/mqueries.css', type='text/css', media='all')
+        // CSS
+        //
+          MAILCHIMP
+          <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+          <style type="text/css">
+          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+          /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+          </style>
+          MAILCHIMP
+        // FAVICON
+        link(rel='shortcut icon', href='files/uploads/favicon.png')
+        // FAVICON
+    body
+        // PAGELOADER
+        #page-loader
+            .page-loader-inner
+                .loader
+                    strong Loading
+        // PAGELOADER
+        // PAGE CONTENT
+        #page-content
+            // HEADER
+            header#header
+                .header-inner.clearfix
+                    #logo.left-float.show-light-logo
+                        a#dark-logo.logotype(href='index.html')
+                            img(src='files/uploads/logo-small.png', srcset='files/uploads/logo-small.png 1x, files/uploads/logo-small.png 2x', alt='Logo')
+                        a#light-logo.logotype(href='index.html')
+                            img(src='files/uploads/logo-small.png', srcset='files/uploads/logo-small.png 1x, files/uploads/logo-small.png 2x', alt='Logo')
+                    #menu.right-float.clearfix.menu-light
+                        a.open-nav(href='#')
+                            span.hamburger
+                            span.text Menu
+                        nav#main-nav
+                            ul
+                                li
+                                    a(href='index.html') Home
+                                li
+                                    a(href='classes.jade') Classes
+                                li
+                                    a(href='about.jade') About
+                                li.current-menu-item
+                                    a(href='contact.html') Contact
+                        // END .header-inner
+            // HEADER
+            // HERO
+            section#hero.hero-big.parallax-section(data-parallax-image='files/uploads/d1.jpg')
+                .page-title
+                    blockquote.text-light “The quieter you become, the more you are able to hear”
+            // HERO
+            // PAGEBODY
+            section#page-body
+                .wrapper
+                    .column-section.clearfix
+                        .column.one-third
+                            h4
+                                strong General info
+                            .spacer.spacer-mini
+                            h6.uppercase Location
+                            p
+                                | You Yin
+                                br
+                                | Surinameplein 35
+                                br
+                                | 1058GM Amsterdam
+                            p
+                                | 52° 21’ 26.9” N
+                                br
+                                | 4° 51’ 7.6” E
+                            p
+                                | Kamer Van Koophandel  53.97.5804
+                                br
+                                | Belastingdienst  1759.11.678.B01
+                                br
+                                br
+                                | Rabobank  NL11 RABO 0171 7031 46
+                                br
+                                | T.n.v. Tamara Janmaat
+                            h6.uppercase Contact
+                            p
+                                | +31 6 223 999 67
+                                br
+                                | info@youyin.nl
+                            h6.uppercase Facebook
+                            ul.socialmedia-widget.size-small.hover-fade-1
+                                li.facebook
+                                    a(href='#')
+                        .column.two-third.last-col
+                            h4
+                                strong Contact form
+                            .spacer.spacer-mini
+                            form#contact-form.checkform(action='contact-send.php', target='_self', method='post')
+                                .form-row.clearfix
+                                    label.req(for='name') Name *
+                                    input#name.name(type='text', name='name', value='', placeholder='Name')
+                                .form-row.clearfix
+                                    label.req(for='phone') Phone *
+                                    input#phone.phone(type='text', name='phone', value='', placeholder='Phone')
+                                .form-row.clearfix
+                                    label.req(for='email') Email *
+                                    input#email.email(type='text', name='email', value='', placeholder='Email')
+                                .form-row.clearfix.textbox
+                                    label.req(for='message') Message *
+                                    textarea#message.message(name='message', rows='15', cols='50', placeholder='Message')
+                                #form-note
+                                    .alert.alert-error
+                                        strong Error
+                                        | : Please check your entries!
+                                .form-row.form-submit
+                                    input.submit(type='submit', name='submit_form', value='Send Message')
+                                input(type='hidden', name='subject', value='Contact Subject You Yin')
+                                input(type='hidden', name='fields', value='name,email,message,')
+                                input(type='hidden', name='sendto', value='info@youyin.nl')
+                    // END .column-section
+                // END .wrapper-small
+                .spacer.spacer-small
+                // GOOGLE MAP
+                #map(style='height:400px;')
+                script(type='text/javascript', src='http://maps.google.com/maps/api/js?sensor=false')
+                script(type='text/javascript').
+                    function mapinitialize() {
+                        var latlng = new google.maps.LatLng(52.357738,4.852011);
+                        var myOptions = {
+                            zoom: 16,
+                            center: latlng,
+                            scrollwheel: false,
+                            scaleControl: false,
+                            disableDefaultUI: false,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP,
+                            // Google Map Color Styles
+                            styles: [{featureType:"landscape",stylers:[{saturation:-100},{lightness:65},{visibility:"on"}]},{featureType:"poi",stylers:[{saturation:-100},{lightness:51},{visibility:"simplified"}]},{featureType:"road.highway",stylers:[{saturation:-100},
+                                {visibility:"simplified"}]},{featureType:"road.arterial",stylers:[{saturation:-100},{lightness:30},{visibility:"on"}]},{featureType:"road.local",stylers:[{saturation:-100},{lightness:40},{visibility:"on"}]},{featureType:"transit",stylers:[{saturation:-100},
+                                {visibility:"simplified"}]},{featureType:"administrative.province",stylers:[{visibility:"off"}]/**/},{featureType:"administrative.locality",stylers:[{visibility:"off"}]},{featureType:"administrative.neighborhood",stylers:[{visibility:"on"}
+                            ]/**/},{featureType:"water",elementType:"labels",stylers:[{visibility:"on"},{lightness:-25},{saturation:-100}]},{featureType:"water",elementType:"geometry",stylers:[{hue:"#ffff00"},{lightness:-25},{saturation:-97}]}]
+                        };
+                        var map = new google.maps.Map(document.getElementById("map"),myOptions);
+                        var image = "files/uploads/map-pin.png";
+                        var image = new google.maps.MarkerImage("files/uploads/map-pin.png", null, null, null, new google.maps.Size(48,48));
+                        var marker = new google.maps.Marker({
+                            map: map,
+                            icon: image,
+                            position: map.getCenter()
+                        });
+                        var contentString = '<strong>You Yin</strong><br> Surinameplein 35<br> 1058GM<br> Amsterdam<br><br> Phone: 06 223 999 67<br>';
+                        var infowindow = new google.maps.InfoWindow({
+                            content: contentString
+                        });
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow.open(map,marker);
+                        });
+                    }
+                    mapinitialize();
+                // GOOGLE MAP
+            // PAGEBODY
+            // FOOTER
+            footer
+                .footer-inner.wrapper
+                    .column-section.clearfix
+                        .column.one-half
+                            .widget
+                                ul.socialmedia-widget
+                                    li.facebook
+                                        a(href='https://www.facebook.com/youyinyoga')
+                                    li.widget.copyright
+                                        p
+                                            | Phone:
+                                            a.footercontact(href='tel:+31622399967') 06 22 39 99 67
+                                            |                             &nbsp / &nbsp
+                                            |                             Mail:
+                                            a.footercontact(href='mailto:info@youyin.nl') info@youyin.nl
+                        .column.one-half.last-col.align-right
+                            .widget.copyright
+                                p
+                                    | Design:
+                                    a(href='') T. Janmaat
+                                    | &nbsp / &nbsp Development:
+                                    a(href='') M. Vos
+                        a#backtotop(href='#') Back To Top
+        // END #page-content
+        // PAGE CONTENT
+        // SCRIPTS
+        script(src='files/js/jquery-2.1.4.min.js')
+        script(type='text/javascript', src='files/js/jquery.pace.js')
+        script(type='text/javascript', src='files/js/jquery.easing.1.3.js')
+        script(type='text/javascript', src='files/js/jquery.easing.compatibility.js')
+        script(type='text/javascript', src='files/js/jquery.visible.min.js')
+        script(type='text/javascript', src='files/js/tweenMax.js')
+        script(type='text/javascript', src='files/js/jquery.backgroundparallax.min.js')
+        script(type='text/javascript', src='files/js/jquery.owl.carousel.js')
+        script(type='text/javascript', src='files/js/jquery.wolf.min.js')
+        script(type='text/javascript', src='files/js/script.js')
+        // SCRIPTS

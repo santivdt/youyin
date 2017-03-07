@@ -1,0 +1,280 @@
+doctype html
+//if lt IE 7
+  html.no-js.ie6.oldie(lang='en')
+//if IE 7
+  html.no-js.ie7.oldie(lang='en')
+//if IE 8
+  html.no-js.ie8.oldie(lang='en')
+// [if gt IE 8] <!
+html.no-js(lang='en-US')
+    // <![endif]
+    head
+        // DEFAULT META TAGS
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        title Home | Avoc | Awesome Parallax Template
+        // DEFAULT META TAGS
+        // FONTS
+        link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700,900', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900', rel='stylesheet', type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700', rel='stylesheet', type='text/css')
+        // FONTS
+        // CSS
+        link#default-style-css(rel='stylesheet', href='files/css/style.css', type='text/css', media='all')
+        link#wolf-css(rel='stylesheet', href='files/css/wolf.css', type='text/css', media='all')
+        link#owlcarousel-css(rel='stylesheet', href='files/css/owl.carousel.css', type='text/css', media='all')
+        link#fontawesome-style-css(rel='stylesheet', href='files/css/font-awesome.min.css', type='text/css', media='all')
+        link#ionic-icons-style-css(rel='stylesheet', href='files/css/ionicons.css', type='text/css', media='all')
+        link#mqueries-style-css(rel='stylesheet', href='files/css/mqueries.css', type='text/css', media='all')
+        // CSS
+        // FAVICON
+        link(rel='shortcut icon', href='files/uploads/favicon.png')
+        // FAVICON
+    body
+        // PAGELOADER
+        #page-loader
+            .page-loader-inner
+                .loader
+                    strong Loading
+        // PAGELOADER
+        // PAGE CONTENT
+        #page-content
+            // HEADER
+            header#header
+                .header-inner.clearfix
+                    #logo.left-float
+                        a#dark-logo.logotype(href='index.jade')
+                            img(src='files/uploads/logo-avoc-dark.png', srcset='files/uploads/logo-avoc-dark.png 1x, files/uploads/logo-avoc-dark@2x.png 2x', alt='Logo')
+                        a#light-logo.logotype(href='index.jade')
+                            img(src='files/uploads/logo-avoc-light.png', srcset='files/uploads/logo-avoc-light.png 1x, files/uploads/logo-avoc-light@2x.png 2x', alt='Logo')
+                    #menu.right-float.clearfix
+                        a.open-nav(href='#')
+                            span.hamburger
+                            span.text Menu
+                        nav#main-nav
+                            ul
+                                li.current-menu-item
+                                    a(href='index.jade') Home
+                                    ul.submenu
+                                        li.current-menu-item
+                                            a(href='index.jade')
+                                                | Portfolio
+                                                em Main
+                                        li
+                                            a(href='index-creative.jade')
+                                                | Portfolio
+                                                em Creative
+                                        li
+                                            a(href='index-photography.jade') Photography
+                                        li
+                                            a(href='index-masonry.jade') Classic Masonry
+                                        li
+                                            a(href='index-agency.html') Agency
+                                li
+                                    a(href='about.jade') Pages
+                                    ul.submenu
+                                        li
+                                            a(href='about.jade')
+                                                | About
+                                                em classic
+                                        li
+                                            a(href='about-creative.jade')
+                                                | About
+                                                em creative
+                                        li
+                                            a(href='about-minimal.jade')
+                                                | About
+                                                em bold minimal
+                                        li
+                                            a(href='services.jade') Services
+                                        li
+                                            a(href='404.jade') 404 Page
+                                li
+                                    a(href='blog.jade') Blog
+                                li
+                                    a(href='header-features.html') Features
+                                    ul.submenu
+                                        li
+                                            a(href='general-elements.jade') General Elements
+                                        li
+                                            a(href='header-footer-options.jade') Header / Footer
+                                        li
+                                            a(href='hero-options.jade') Hero Options
+                                li
+                                    a(href='contact.jade') Contact
+                        a.open-filter(href='', data-related-grid='portfolio-grid') Filter
+                    #header-filter
+                        .filter-inner.align-center
+                            a.close-filter(href='') Close
+                            h5.title-filter
+                                strong Filter
+                            ul#portfolio-filter.filter.wolf-filter.clearfix(data-related-grid='portfolio-grid')
+                                li
+                                    a.active(href='#', data-filter-value='*') All
+                                li
+                                    a(data-filter-value='.branding', href='#', title='Branding') Branding
+                                li
+                                    a(data-filter-value='.print', href='#', title='Print') Print
+                                li
+                                    a(data-filter-value='.photography', href='#', title='Print') Photography
+                // END .header-inner
+            // HEADER
+            // HERO
+            section#hero.hero-big
+                .owl-slider.hero-slider(data-autoplay='true')
+                    .slider-item(style='background-image:url(files/uploads/1680x1100-light.jpg);')
+                        .owl-slider-caption
+                            h1
+                                strong Kaffe & Co
+                            h5.alttitle Branding
+                    .slider-item.text-light(style='background-image:url(files/uploads/1680x1100.jpg);')
+                        .owl-slider-caption
+                            h1
+                                strong Still Life
+                            h5.alttitle Photgraphy
+                    .slider-item(style='background-image:url(files/uploads/1680x1100-light.jpg);')
+                        .owl-slider-caption
+                            h1
+                                strong Wood Chair
+                            h5.alttitle Branding
+                // END .owl-slider
+            // HERO
+            // PAGEBODY
+            section#page-body
+                .wrapper
+                    #portfolio-grid.wolf-grid(data-randomhorizontaloffset='true', data-mouseparallax='true')
+                        .wolf-item.portfolio-wolf-item.branding
+                            .wolf-item-inner
+                                .wolf-media.portfolio-media
+                                    a.wolf-media-link(href='portfolio-single-1.jade')
+                                        img(src='files/uploads/600x400-light.jpg', alt='SEO NAME')
+                                .wolf-caption.portfolio-caption
+                                    a.wolf-caption-link(href='portfolio-single-1.jade')
+                                        h6.alttitle.portfolio-category Branding
+                                        h4.portfolio-name
+                                            strong Kaffe & Co
+                        .wolf-item.portfolio-wolf-item.photography
+                            .wolf-item-inner
+                                .wolf-media.portfolio-media
+                                    a.wolf-media-link(href='portfolio-single-2.jade')
+                                        img(src='files/uploads/600x800-light.jpg', alt='SEO NAME')
+                                .wolf-caption.portfolio-caption(style='margin-bottom:20%;')
+                                    a.wolf-caption-link(href='portfolio-single-2.jade')
+                                        h6.alttitle.portfolio-category Photography
+                                        h4.portfolio-name
+                                            strong The Efimer
+                        .wolf-item.portfolio-wolf-item.photography
+                            .wolf-item-inner
+                                .wolf-media.portfolio-media
+                                    a.wolf-media-link(href='portfolio-single-3.jade')
+                                        img(src='files/uploads/600x800-light.jpg', alt='SEO NAME')
+                                .wolf-caption.portfolio-caption(style='margin-top:10%;')
+                                    a.wolf-caption-link(href='portfolio-single-2.jade')
+                                        h6.alttitle.portfolio-category Photography
+                                        h4.portfolio-name
+                                            strong Still Life
+                        .wolf-item.portfolio-wolf-item.print
+                            .wolf-item-inner
+                                .wolf-media.portfolio-media
+                                    a.wolf-media-link(href='portfolio-single-1.jade')
+                                        img(src='files/uploads/600x400-light.jpg', alt='SEO NAME')
+                                .wolf-caption.portfolio-caption
+                                    a.wolf-caption-link(href='portfolio-single-1.jade')
+                                        h6.alttitle.portfolio-category Print
+                                        h4.portfolio-name
+                                            strong
+                                                | Lost Engine
+                                                br
+                                                | Studio
+                        .wolf-item.portfolio-wolf-item.branding
+                            .wolf-item-inner
+                                .wolf-media.portfolio-media
+                                    a.wolf-media-link(href='portfolio-single-2.jade')
+                                        img(src='files/uploads/600x400-light.jpg', alt='SEO NAME')
+                                .wolf-caption.cbottom.portfolio-caption(style='margin-right: 8%')
+                                    a.wolf-caption-link(href='portfolio-single-2.jade')
+                                        h6.alttitle.portfolio-category Branding
+                                        h4.portfolio-name
+                                            strong
+                                                | Brücke
+                                                br
+                                                | Bier
+                        .wolf-item.portfolio-wolf-item.branding
+                            .wolf-item-inner
+                                .wolf-media.portfolio-media
+                                    a.wolf-media-link(href='portfolio-single-1.jade')
+                                        img(src='files/uploads/600x800-light.jpg', alt='SEO NAME')
+                                .wolf-caption.portfolio-caption
+                                    a.wolf-caption-link(href='portfolio-single-1.jade')
+                                        h6.alttitle.portfolio-category Branding
+                                        h4.portfolio-name
+                                            strong
+                                                | Modern
+                                                br
+                                                | Wood Chair
+                        .wolf-item.portfolio-wolf-item.print
+                            .wolf-item-inner
+                                .wolf-media.portfolio-media
+                                    a.wolf-media-link(href='portfolio-single-1.jade')
+                                        img(src='files/uploads/600x800-light.jpg', alt='SEO NAME')
+                                .wolf-caption.portfolio-caption
+                                    a.wolf-caption-link(href='portfolio-single-1.jade')
+                                        h6.alttitle.portfolio-category Print
+                                        h4.portfolio-name
+                                            strong
+                                                | Skins Shoe
+                                                br
+                                                | Package
+                        .wolf-item.portfolio-wolf-item.print
+                            .wolf-item-inner
+                                .wolf-media.portfolio-media
+                                    a.wolf-media-link(href='portfolio-single-1.jade')
+                                        img(src='files/uploads/600x400-light.jpg', alt='SEO NAME')
+                                .wolf-caption.portfolio-caption
+                                    a.wolf-caption-link(href='portfolio-single-1.jade')
+                                        h6.alttitle.portfolio-category Print
+                                        h4.portfolio-name
+                                            strong
+                                                | Sixteen &
+                                                br
+                                                | Frans
+                    // END #portfolio-grid .wolf-grid
+                // END .wrapper
+            // PAGEBODY
+            // FOOTER
+            footer
+                .footer-inner.align-center.wrapper
+                    .widget
+                        ul.socialmedia-widget
+                            li.facebook
+                                a(href='#')
+                            li.twitter
+                                a(href='#')
+                            li.dribbble
+                                a(href='#')
+                            li.behance
+                                a(href='#')
+                            li.instagram
+                                a(href='#')
+                    .widget.copyright
+                        p
+                            | Copyright © 2014 by Avoc
+                            br
+                            |                 Made with Love by
+                            a(href='http://www.spab-rice.com') Spab Rice
+                    a#backtotop(href='#') Back To Top
+            // FOOTER
+        // END #page-content
+        // PAGE CONTENT
+        // SCRIPTS
+        script(src='files/js/jquery-2.1.4.min.js')
+        script(type='text/javascript', src='files/js/jquery.pace.js')
+        script(type='text/javascript', src='files/js/jquery.easing.1.3.js')
+        script(type='text/javascript', src='files/js/jquery.easing.compatibility.js')
+        script(type='text/javascript', src='files/js/tweenMax.js')
+        script(type='text/javascript', src='files/js/jquery.owl.carousel.js')
+        script(type='text/javascript', src='files/js/jquery.wolf.min.js')
+        script(type='text/javascript', src='files/js/script.js')
+        // SCRIPTS
