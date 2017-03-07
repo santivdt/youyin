@@ -64,7 +64,7 @@ gulp.task('jade', function() {
 /* Javascript Task */
 gulp.task('scripts', function() {
   return gulp.src('source/files/js/*.js')
-    .pipe(concat('main.js'))
+    // .pipe(concat('main.js'))
     .pipe(gulp.dest('public/files/js'))
     .pipe(livereload());
 });
