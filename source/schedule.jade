@@ -20,6 +20,7 @@ html.no-js(lang='en-US')
         link(href='http://fonts.googleapis.com/css?family=Didact+Gothic:400', rel='stylesheet', type='text/css')
         // FONTS
         // CSS
+        // <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
         link#default-style-css(rel='stylesheet', href='files/css/style.css', type='text/css', media='all')
         link#wolf-css(rel='stylesheet', href='files/css/wolf.css', type='text/css', media='all')
         link#owlcarousel-css(rel='stylesheet', href='files/css/owl.carousel.css', type='text/css', media='all')
@@ -27,15 +28,10 @@ html.no-js(lang='en-US')
         link#ionic-icons-style-css(rel='stylesheet', href='files/css/ionicons.css', type='text/css', media='all')
         link#mqueries-style-css(rel='stylesheet', href='files/css/mqueries.css', type='text/css', media='all')
         // CSS
-        //
-          MAILCHIMP
-          <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-          <style type="text/css">
-          #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-          /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-          </style>
-          MAILCHIMP
+        style(type='text/css').
+            #mc_embed_signup{background:transparent; clear:left; font:14px; }
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+            We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
         // FAVICON
         link(rel='shortcut icon', href='files/uploads/favicon.png')
         // FAVICON
@@ -56,7 +52,7 @@ html.no-js(lang='en-US')
                             img(src='files/uploads/logo-small.png', srcset='files/uploads/logo-small.png 1x, files/uploads/logo-small.png 2x', alt='Logo')
                         a#light-logo.logotype(href='index.html')
                             img(src='files/uploads/logo-small.png', srcset='files/uploads/logo-small.png 1x, files/uploads/logo-small.png 2x', alt='Logo')
-                    #menu.right-float.clearfix.menu-light
+                    #menu.right-float.clearfix
                         a.open-nav(href='#')
                             span.hamburger
                             span.text Menu
@@ -66,57 +62,40 @@ html.no-js(lang='en-US')
                                     a(href='index.html') Home
                                 li
                                     a(href='classes.html') Classes
-                                li
+                                li.current-menu-item
                                     a(href="schedule.html") Schedule
                                 li
                                     a(href="pricing.html") Pricing
-                                li.current-menu-item
+                                li
                                     a(href='about.html') About
                                 li
                                     a(href='contact.html') Contact
                         // END .header-inner
-            // HEADER
-            .test(style='position: fixed;top:20px;left:20px; height: 60px; overflow:hidden; width: 100%; color: red;')
-            // HERO
-            section#hero.hero-full.parallax-section.text-light(data-parallax-image='files/uploads/foto_vogel.jpg')
-                .page-title.title-about.vbottom
-                    blockquote.align-center(style='max-width: 840px; margin: auto;')
-                        | “I honor the place in you where the entire universe resides. I honor the place in you that is of light, love, truth, peace and wisdom. When you are in that place in you, and I am in that place in me, We Are One."
-                    .namaste - Namasté
-                a#scroll-down(href='#') Scroll Down
-            // HERO
             // PAGEBODY
-            section#page-body(style='padding-top: 90px;')
-                .wrapper.align-right
-                    .column-section.clearfix
-                        .column.one-fourth
-                            img.tamara-profile(src='files/uploads/foto-tamara2.png')
-                        .column.three-fourth.last-col
-                            h3
-                                strong About Me
-                            .spacer.spacer-mini
-                            p.alttitle(style='margin: 0px 0px 0px 30px;')
-                                | Yoga makes me happy. It brings me back to my true nature and it makes me feel calm, light & peaceful. It helps me to embrace everything that is and appreciate and love more every day. To honor my body and to really listen and connect to the energy in and around us. In teaching I hope to share this experience with others and together enjoy everything that we are and that we are surrounded with. Meditation teaches me to free my mind and listen to my heart. Besides teaching yoga I work as an architect and graphic designer. I also work in a community centre. I feel curious, adventurous and free. I love to dance, sing, play, travel, explore and just live!
-                                br
-                                | – Tamara
-                .spacer.spacer-medium
-                .horizontal-section.parallax-section.text-light(data-parallax-image='files/uploads/foto_x.jpg')
-                    .horizontal-innerbig.wrapper
-                        .tester
-                            h4
-                                strong Broedplaats SUP
-                            p.alttitle
-                                | The yoga classes take place in a special equipped room with mats, bolsters, blankets, blocks and eye pillows. We always create a nice peaceful atmosphere with music, candles and a comfortable temperature. There is a separate room for men and women to change clothes with a sink and toilets. After class we serve tea and water. Al you have to bring is yourself and you go home with a relaxed and improved state of mind and body.
+            section#page-body.page-small-margin
+                .spacer.spacer-small
+                .horizontal-section.text-light.parallax-section(data-parallax-image='files/uploads/a1.jpg')
+                    .horizontal-inner.wrapper.align-center
+                        i.ion.ion-ios-calendar-outline.ion-4x.colored
+                        h4
+                            strong Upcoming classes
+                        .spacer-mini
+                        h5.alttitle To book a class, please send us a message
+                        .spacer.spacer-mini
+                        .responsive-iframe-container
+                            iframe(src='https://calendar.google.com/calendar/embed?showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=AGENDA&height=150&wkst=1&bgcolor=%23cccccc&src=1bac8ecclsgrr00fpeiudlciqo%40group.calendar.google.com&color=%2388880E&ctz=Europe%2FAmsterdam',
+                            style='border-width:0',
+                            width='800',
+                            height='600',
+                            frameborder='0',
+                            scrolling='no')
+                        .spacer.spacer-small
+                        p
+                            a.small-button.sr-button.sr-button4(href='contact.html') Book a class
                 // END .horizontal-section
-                .horizontal-section(style='background: #d6ab29;')
-                    .horizontal-inner.horizontal-inner-short.align-center.text-light.wrapper
-                        img(src='files/uploads/cirkels_tekst.png', alt='')
-                        h4(style='margin-top: -20px;')
-                            strong What to expect in your first yoga class?
-                // END .horizontal-section
-                // <a href="#" class="sr-button button-full button-2">Kickstart your project<br><strong>Contact us here</strong></a>
-                .horizontal-section.parallax-section.text-light(data-parallax-image='files/uploads/c1.jpg')
-                    .horizontal-inner.wrapper.wrapper-small.align-center
+                .horizontal-section(style='background-color: #b8cec5;')
+                    .horizontal-inner.wrapper-small.align-center
+                        i.ion.ion-paper-airplane.ion-4x.colored
                         h4
                             strong Newsletter
                         .spacer.spacer-mini

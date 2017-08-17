@@ -52,10 +52,10 @@ html.no-js(lang='en-US')
                             img(src='files/uploads/logo-small.png', srcset='files/uploads/logo-small.png 1x, files/uploads/logo-small.png 2x', alt='Logo')
                         a#light-logo.logotype(href='index.html')
                             img(src='files/uploads/logo-small.png', srcset='files/uploads/logo-small.png 1x, files/uploads/logo-small.png 2x', alt='Logo')
-                    #menu.right-float.clearfix.menu-light
+                    #menu.right-float.clearfix
                         a.open-nav(href='#')
                             span.hamburger
-                            span.text Menu
+                            span.text.dark Menu
                         nav#main-nav
                             ul
                                 li
@@ -63,84 +63,15 @@ html.no-js(lang='en-US')
                                 li.current-menu-item
                                     a(href='classes.html') Classes
                                 li
+                                    a(href="schedule.html") Schedule
+                                li
+                                    a(href="pricing.html") Pricing
+                                li
                                     a(href='about.html') About
                                 li
                                     a(href='contact.html') Contact
                         // END .header-inner
             // HEADER
-            // HERO
-            section#hero.hero-auto.parallax-section(data-parallax-image='files/uploads/e1.jpg')
-                .fullwidth-content.wrapper
-                    .spacer.spacer-regular
-                    .column-section.bordered-spaced.clearfix.accent-pricing.text-light
-                        .column.one-third.pricing-table.plain
-                            .pricing-title
-                                h5.uppercase You Yin
-                                h4.uppercase Drop-In
-                                span.price-period single class
-                            .pricing-price
-                                span.price-unit € 9
-                                span.price-period per class
-                            ul.pricing-list
-                                li no strings attached
-                            .pricing-action
-                                a.sr-button.button-small.button-1.rounded(href='contact.html') Book Class
-                        .column.one-third.pricing-table.plain
-                            .pricing-title
-                                h5.uppercase You Yin
-                                h4.uppercase Regular
-                                span.price-period 5 classes
-                            .pricing-price
-                                span.price-unit € 40
-                                span.price-period €7 per class
-                            ul.pricing-list
-                                li 2 months valid
-                            .pricing-action
-                                a.sr-button.button-small.button-1.rounded(href='contact.html') Book Class
-                        .column.one-third.last-col.pricing-table.plain
-                            .pricing-title
-                                h5.uppercase You Yin
-                                h4.uppercase Weekly
-                                span.price-period 10 classes
-                            .pricing-price
-                                span.price-unit € 70
-                                span.price-period € 6 per class
-                            ul.pricing-list
-                                li 3 months valid
-                            .pricing-action
-                                a.sr-button.button-small.button-1.rounded(href='contact.html') Book Class
-            section#hero.hero-auto.parallax-section(data-parallax-image='files/uploads/e1.jpg')
-                .fullwidth-content.wrapper
-                   .spacer.spacer-regular
-                       .column-section.bordered-spaced.clearfix.accent-pricing.text-light
-                           .column.one-third.pricing-table.plain
-                               .pricing-title
-                                   h5.uppercase You Yin
-                                   h4.uppercase Intake
-                                   span.price-period Private appointment
-                               .pricing-price
-                                   span.price-unit € 25
-                                   span.price-period per person
-                               ul.pricing-list
-                                   li 30 minutes
-                               .pricing-action
-                                   a.sr-button.button-small.button-1.rounded(href='contact.html') Book Class
-                           .column.one-third.pricing-table.plain
-                               .pricing-title
-                                   h5.uppercase You Yin
-                                   h4.uppercase Yoga Coaching
-                                   span.price-period Private appointment
-                               .pricing-price
-                                   span.price-unit € 40
-                                   span.price-period per person
-                               ul.pricing-list
-                                   li 45 minutes
-                               .pricing-action
-                                   a.sr-button.button-small.button-1.rounded(href='contact.html') Book Class
-                    // END .column-section
-                    .spacer.spacer-regular
-
-            // HERO
             // PAGEBODY
             section#page-body.page-small-margin
                 .horizontal-section
@@ -230,24 +161,6 @@ html.no-js(lang='en-US')
                             .column.one-fourth.last-col.complete-center-parent
                                 p.img-circle
                                     img(src='files/uploads/arrow.png', srcset='files/uploads/arrow.png', alt='Logo')
-                .horizontal-section.text-light.parallax-section(data-parallax-image='files/uploads/a1.jpg')
-                    .horizontal-inner.wrapper.align-center
-                        i.ion.ion-ios-calendar-outline.ion-4x.colored
-                        h4
-                            strong Upcoming classes
-                        .spacer-mini
-                        h5.alttitle To book a class, please send us a message
-                        .spacer.spacer-mini
-                        .responsive-iframe-container
-                            iframe(src='https://calendar.google.com/calendar/embed?showTitle=0&showNav=0&showDate=0&showPrint=0&showTabs=0&showCalendars=0&showTz=0&mode=AGENDA&height=150&wkst=1&bgcolor=%23cccccc&src=1bac8ecclsgrr00fpeiudlciqo%40group.calendar.google.com&color=%2388880E&ctz=Europe%2FAmsterdam',
-                            style='border-width:0',
-                            width='800',
-                            height='600',
-                            frameborder='0',
-                            scrolling='no')
-                        .spacer.spacer-small
-                        p
-                            a.small-button.sr-button.sr-button4(href='contact.html') Book a class
                 // END .horizontal-section
                 .horizontal-section(style='background-color: #b8cec5;')
                     .horizontal-inner.wrapper-small.align-center
