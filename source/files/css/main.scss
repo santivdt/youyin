@@ -30,3 +30,16 @@ header:not(.hero-invisible) .menu-light .open-nav .text {
   align-items: center;
   flex-direction: column;
 }
+
+.accent-pricing .pricing-table.plain, .text-light .accent-pricing .pricing-table.plain {
+  background: #b8cdc4!important;
+}
+
+a.sr-button {
+  background: white!important;
+  color: black!important;
+}
+
+blockquote.text-light.center {
+  text-align: center;
+}
