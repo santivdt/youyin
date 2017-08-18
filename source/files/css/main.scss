@@ -5,3 +5,28 @@ span.text.dark {
 header:not(.hero-invisible) .menu-light .open-nav .text {
   color: black;
 }
+
+.horizontal-section.text-light.schedule-bg {
+  background-image: url("../uploads/a1.jpg");
+  margin: 50px 0 0 0;
+  background-repeat: no-repeat;
+}
+
+
+.up-a-bit {
+  margin-top: -50px;
+}
+
+.horizontal-section.inspirational-quote {
+  background-image: url("../uploads/foto_x.jpg");
+  min-height: 600px;
+  background-repeat: none;
+  background-position: center center;
+}
+
+.horizontal-section.inspirational-quote.flexbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

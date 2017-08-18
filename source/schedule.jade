@@ -22,6 +22,7 @@ html.no-js(lang='en-US')
         // CSS
         // <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
         link#default-style-css(rel='stylesheet', href='files/css/style.css', type='text/css', media='all')
+        link(rel='stylesheet', type='text/css', href='files/css/main.css')
         link#wolf-css(rel='stylesheet', href='files/css/wolf.css', type='text/css', media='all')
         link#owlcarousel-css(rel='stylesheet', href='files/css/owl.carousel.css', type='text/css', media='all')
         link#fontawesome-style-css(rel='stylesheet', href='files/css/font-awesome.min.css', type='text/css', media='all')
@@ -74,8 +75,8 @@ html.no-js(lang='en-US')
             // PAGEBODY
             section#page-body.page-small-margin
                 .spacer.spacer-small
-                .horizontal-section.text-light.parallax-section(data-parallax-image='files/uploads/a1.jpg')
-                    .horizontal-inner.wrapper.align-center
+                .horizontal-section.text-light.schedule-bg
+                    .horizontal-inner.wrapper.align-center.schedule
                         i.ion.ion-ios-calendar-outline.ion-4x.colored
                         h4
                             strong Upcoming classes
@@ -93,7 +94,7 @@ html.no-js(lang='en-US')
                         p
                             a.small-button.sr-button.sr-button4(href='contact.html') Book a class
                 // END .horizontal-section
-                .horizontal-section(style='background-color: #b8cec5;')
+                .horizontal-section.up-a-bit(style='background-color: #b8cec5;')
                     .horizontal-inner.wrapper-small.align-center
                         i.ion.ion-paper-airplane.ion-4x.colored
                         h4
